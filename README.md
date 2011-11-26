@@ -2,6 +2,11 @@
 
 This gem contains the unofficial Yandex.ru OAuth2 strategy for [OmniAuth](http://github.com/intridea/omniauth).
 
+## Installation
+
+    gem "omniauth-vkontakte"
+    
+
 ## Basic Usage
 
     use OmniAuth::Builder do
