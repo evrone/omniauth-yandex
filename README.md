@@ -20,4 +20,4 @@ This gem contains the unofficial Yandex.ru OAuth2 strategy for [OmniAuth](http:/
 
 ## License
 
-Copyright (c) 2011 by Kirill Shatrov
+Copyright (c) 2011 by Kirill Shatrov, [Evrone.com](http://evrone.com/)
