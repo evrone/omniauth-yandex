@@ -6,6 +6,7 @@ This gem contains the unofficial Yandex.ru OAuth2 strategy for [OmniAuth](http:/
 
     gem "omniauth-vkontakte"
     
+Also, you have to get keys for your app at [Yandex OAuth app registration page](https://oauth.yandex.ru/client/new)
 
 ## Basic Usage
 
