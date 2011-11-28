@@ -1,12 +1,12 @@
-# OmniAuth Yandex.ru
+# Yandex OAuth strategy for OmniAuth
 
-This gem contains the unofficial Yandex.ru OAuth2 strategy for [OmniAuth](http://github.com/intridea/omniauth).
+This gem contains the unofficial Yandex OAuth2 strategy for [OmniAuth](http://github.com/intridea/omniauth).
 
 ## Installation
 
-    gem "omniauth-vkontakte"
+    gem "omniauth-yandex"
     
-Also, you have to get keys for your app at [Yandex OAuth app registration page](https://oauth.yandex.ru/client/new)
+Also, you have to obtain API key for your app at Yandex [OAuth app registration page](https://oauth.yandex.ru/client/new)
 
 ## Basic Usage
 
