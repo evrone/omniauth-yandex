@@ -1,5 +1,5 @@
 require 'omniauth/strategies/oauth2'
-require 'xmlsimple'
+require 'json'
 
 module OmniAuth
   module Strategies
@@ -16,25 +16,17 @@ module OmniAuth
         :authorize_url => '/authorize'
       }
 
-      uid do
-        raw_info[:uid]
-      end
-
-      info do
-        {
-          :nickname => raw_info[:name],
-          :email => raw_info[:email],
-          :name => raw_info[:name],
-          :image => raw_info[:photo],
-          :location => raw_info[:country],
-          :urls => {
-            'Yandex' => raw_info[:yaru_profile]
-          }
-        }
-      end
+      uid { raw_info['id'] }
 
       extra do
         {:raw_info => raw_info}
+      end
+
+      info do
+        {'nickname' => raw_info['display_name'],
+        'email'  => raw_info['default_email'],
+        'name' => raw_info['real_name']
+        }.delete_if{ |_,v| v.nil?||v.respond_to?(:empty?)&&v.empty? }
       end
 
       def callback_url
@@ -49,24 +41,10 @@ module OmniAuth
 
       def raw_info
         @raw_info ||= begin
-          # Get user info from Ya.ru API
-          # http://api.yandex.ru/yaru/doc/ref/concepts/discovery.xml
-          xml_data = access_token.get("https://api-yaru.yandex.ru/me/").body
-          data = XmlSimple.xml_in(xml_data)
-          {
-            :uid => data["id"][0],
-            :yaru_profile => data["link"][0]["href"],
-            :photo => data["link"][2]["href"],
-            :name => data["name"][0],
-            :email => data["email"][0],
-            :country => data["country"][0],
-            :city => data["city"][0],
-            :sex => data["sex"][0],
-            :skype => data["skype"][0]
-          }
+          # Get user info from Yandex.login API
+          JSON.parse access_token.get("https://login.yandex.ru/info?format=json").body
         end
       end
-
     end
   end
 end
