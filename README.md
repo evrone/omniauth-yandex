@@ -5,8 +5,12 @@ This gem contains the unofficial Yandex OAuth2 strategy for [OmniAuth](http://gi
 ## Installation
 
     gem "omniauth-yandex"
-    
+
 Also, you have to obtain API key for your app at Yandex [OAuth app registration page](https://oauth.yandex.ru/client/new)
+
+*You have to check these checkboxes like on the screenshot:*
+
+![](http://f.cl.ly/items/3A093X3E420k2Q3P0K2A/Screen%20Shot%202012-10-21%20at%2010.12.13%20PM.png)
 
 ## Basic Usage
 
