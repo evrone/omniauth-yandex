@@ -19,14 +19,15 @@ module OmniAuth
       uid { raw_info['id'] }
 
       extra do
-        {:raw_info => raw_info}
+        prune!({:raw_info => raw_info})
       end
 
       info do
-        {'nickname' => raw_info['display_name'],
-        'email'  => raw_info['default_email'],
-        'name' => raw_info['real_name']
-        }.delete_if{ |_,v| v.nil?||v.respond_to?(:empty?)&&v.empty? }
+        prune!({
+          'nickname' => raw_info['display_name'],
+          'email'  => raw_info['default_email'],
+          'name' => raw_info['real_name']
+        })
       end
 
       def callback_url
@@ -38,6 +39,13 @@ module OmniAuth
       end
 
       private
+
+      def prune!(hash)
+        hash.delete_if do |_, value|
+          prune!(value) if value.is_a?(Hash)
+          value.nil? || (value.respond_to?(:empty?) && value.empty?)
+        end
+      end
 
       def raw_info
         @raw_info ||= begin
