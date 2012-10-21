@@ -1,5 +1,5 @@
 module Omniauth
   module Yandex
-    VERSION = "0.0.2lite"
+    VERSION = "0.0.2"
   end
 end
