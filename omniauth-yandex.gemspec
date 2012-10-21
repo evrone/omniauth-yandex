@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.version     = Omniauth::Yandex::VERSION
   s.authors     = ["Kir Shatrov"]
   s.email       = ["shatrov@me.com"]
-  s.homepage    = "https://github.com/kirs/omniauth-yandex"
+  s.homepage    = "https://github.com/evrone/omniauth-yandex"
   s.summary     = %q{OmniAuth strategy for Yandex.ru}
   s.description = %q{OmniAuth strategy for Yandex.ru}
 
