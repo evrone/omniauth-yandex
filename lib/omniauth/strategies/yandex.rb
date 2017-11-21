@@ -5,7 +5,7 @@ module OmniAuth
   module Strategies
 
     # Authenticate to Yandex.ru utilizing OAuth 2.0
-    # http://api.yandex.ru/oauth/
+    # https://tech.yandex.com/oauth/
 
     class Yandex < OmniAuth::Strategies::OAuth2
       option :name, "yandex"
