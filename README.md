@@ -21,7 +21,7 @@ You have to obtain API key for your app at Yandex [OAuth app registration page](
 
 ## Links
 
-* http://api.yandex.ru/oauth/
+* https://tech.yandex.com/oauth/
 
 ## License
 
