@@ -1,5 +1,6 @@
+.idea
+
 *.swp
 *.swo
-Gemfile.lock
 coverage
 *.gem
