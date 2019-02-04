@@ -83,8 +83,8 @@ The changelog is [here](CHANGELOG.md).
 
 ## Authors
 
-* [Kir Shatrov](https://github.com/kirs) 
-* [Dmitry Koropenko](https://github.com/smalew) 
+* [Kir Shatrov](https://github.com/kirs) - Initial work
+* [Dmitry Koropenko](https://github.com/smalew) - Maintainer
 
 See also the list of [contributors](https://github.com/evrone/omniauth-yandex/contributors) who participated in this project.
 
