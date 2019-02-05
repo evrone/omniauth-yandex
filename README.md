@@ -1,8 +1,8 @@
 # Yandex OAuth strategy for OmniAuth
 
 ![travis](https://travis-ci.org/evrone/omniauth-yandex.svg?branch=master)
-![codeclimate](https://travis-ci.org/evrone/omniauth-yandex.svg?branch=master)
-![hound](https://travis-ci.org/evrone/omniauth-yandex.svg?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/evrone/omniauth-yandex1/maintainability)
+[![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 
 This gem contains the unofficial Yandex OAuth2 strategy for [OmniAuth](http://github.com/intridea/omniauth).
 
