@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    omniauth-yandex (0.0.2)
+    omniauth-yandex (0.0.3)
       omniauth (~> 1.0)
       omniauth-oauth2 (~> 1.0)
 
@@ -28,6 +28,7 @@ GEM
       oauth2 (~> 1.1)
       omniauth (~> 1.9)
     rack (2.0.6)
+    rake (12.3.2)
 
 PLATFORMS
   ruby
@@ -35,6 +36,7 @@ PLATFORMS
 DEPENDENCIES
   omniauth (~> 1.0)
   omniauth-yandex!
+  rake
 
 BUNDLED WITH
    2.0.1
