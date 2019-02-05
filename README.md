@@ -1,5 +1,7 @@
 # Yandex OAuth strategy for OmniAuth
 
+![travis](https://travis-ci.org/evrone/omniauth-yandex.svg?branch=master)
+
 This gem contains the unofficial Yandex OAuth2 strategy for [OmniAuth](http://github.com/intridea/omniauth).
 
 <a href="https://evrone.com/?utm_source=github.com">

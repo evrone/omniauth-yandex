@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    omniauth-yandex (0.0.2)
+    omniauth-yandex (0.0.3)
       omniauth (~> 1.0)
       omniauth-oauth2 (~> 1.0)
 
