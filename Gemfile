@@ -3,4 +3,4 @@ source "http://rubygems.org"
 gemspec
 
 gem 'rake'
-gem 'omniauth', '~> 1.0'
+gem 'omniauth', '~> 2.1'
